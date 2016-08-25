@@ -7,4 +7,4 @@ A theme for HyperTerm
 Add hyperterm-wp-theme to the plugins list in your ~/.hyperterm.js config file.
 
 ## License
-MIT, by Pat Trevino
+MIT, by Pat Treznov
