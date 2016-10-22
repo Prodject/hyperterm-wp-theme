@@ -48,7 +48,7 @@ exports.decorateConfig = (config) => {
     `,
     css: `
       ${config.css || ''}
-      .hyperterm_main {
+      .hyper_main {
         border: none !important;
         background: ${ORANGE} !important;
       }      
@@ -61,9 +61,6 @@ exports.decorateConfig = (config) => {
       .terms_terms {
         background: ${BACKGROUND} !important;
       }
-      .tabs_list, .tab_active::before {
-        border: none !important;
-      }
       .tabs_title, .tab_tab, .tab_text:hover {
         color: ${WHITE};  
       }
@@ -71,15 +68,13 @@ exports.decorateConfig = (config) => {
         font-weight: bold;        
       }
       .tab_tab {
-        border-left: 1px solid ${BORDER_COLOR};
+        border: none;        
       }
       .tab_active {
-        background: ${BACKGROUND};
+        border: none;
+        background: ${BACKGROUND} !important;
       }
-      .tab_active + li {
-        border-left: none !important;
-      }
-      .tab_active.tab_tab, .tab_textActive {
+      .tabs_borderShim {
         border: none !important;
       }
     `
